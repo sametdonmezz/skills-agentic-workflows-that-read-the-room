@@ -1,22 +1,24 @@
 ---
-name: update-github-info
 description: Draft website updates for Mona's GitHub Info site from official GitHub sources.
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '17 9 * * *'
-safe-outputs:
-  create-pull-request:
-    title-prefix: "[mona] "
-    draft: true
-    fallback-as-issue: false
-tools:
-  edit:
-  web-fetch:
+engine:
+  model: gpt-5-mini
+name: update-github-info
 network:
   allowed:
     - github.com
     - github.blog
+"on":
+  schedule:
+    - cron: 17 9 * * *
+  workflow_dispatch: null
+safe-outputs:
+  create-pull-request:
+    draft: true
+    fallback-as-issue: false
+    title-prefix: "[mona] "
+tools:
+  edit: null
+  web-fetch: null
 ---
 
 # Update Mona's GitHub Info website
