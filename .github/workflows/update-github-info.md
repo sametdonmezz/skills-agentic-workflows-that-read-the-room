@@ -1,7 +1,7 @@
 ---
 description: Draft website updates for Mona's GitHub Info site from official GitHub sources.
 engine:
-  model: gpt-5-mini
+  model: auto
 name: update-github-info
 network:
   allowed:
