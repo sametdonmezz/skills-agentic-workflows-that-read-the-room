@@ -1,6 +1,9 @@
 ---
 name: update-github-info
 description: Draft website updates for Mona's GitHub Info site from official GitHub sources.
+engine:
+  # Leave the model unset so the Copilot service can choose a supported default.
+  # The account/token here rejects the forced "auto" model.
 on:
   workflow_dispatch:
   schedule:
@@ -22,7 +25,7 @@ network:
 
 # Update Mona's GitHub Info website
 
-Read `notes/mona-notes.md` before making changes, using GitHub repository API tools to read repository guidance and reference files. Do not use terminal, CLI, or sandboxed commands to read repository files.
+Read `notes/mona-notes.md` before making changes, using GitHub repository API tools to read repository guidance and reference files. Do not use terminal, CLI, or sandboxed commands to read repository files or content beyond the repository context in the prompt. Provide a concise, practical update that reflects official GitHub product guidance and public sources.
 
 Use web-fetch to read these official sources and any relevant external public guidance:
 - GitHub Blog: https://github.blog/latest/
