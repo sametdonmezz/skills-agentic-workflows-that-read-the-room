@@ -1,7 +1,7 @@
 ---
 name: update-github-info
 description: Draft website updates for Mona's GitHub Info site from official GitHub sources.
-engine:
+engine: copilot
   # Leave the model unset so the Copilot service can choose a supported default.
   # The account/token here rejects the forced "auto" model.
 on:
